@@ -28,13 +28,12 @@ std::cout << "Building at X: " << build_x << ", Y: " << build_y <<
 ", Z: " << build_z << std::endl;
 mcpp::Coordinate startCoord(build_x, build_y, build_z);
 for (int row = 0; row < envLength; row++) {
-for (int col = 0; col < envWidth; col++) {
-mc.setBlock(startCoord+mcpp::Coordinate(row, 0, col), mcpp::Blocks::AIR);
-if (test_env.getEnvElement(row, col) == 'x'){
-mc.setBlock(startCoord+mcpp::Coordinate(row, 0, col),
-mcpp::Blocks::BRICKS);
-}
-}
-}
-return EXIT_SUCCESS;
+    for (int col = 0; col < envWidth; col++) {
+        mc.setBlock(startCoord+mcpp::Coordinate(row, 0, col), mcpp::Blocks::AIR);
+        if (test_env.getEnvElement(row, col) == 'x'){
+                mc.setBlock(startCoord+mcpp::Coordinate(row, 0, col), mcpp::Blocks::BRICKS);
+            }
+        }
+    }
+    return EXIT_SUCCESS;
 }

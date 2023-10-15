@@ -41,13 +41,10 @@ void printSolveMazeMenu(void){
 
 void printTeamInfo(void){
     std::cout << std::endl;
-    std::cout << "Team members:" << std::endl;
-
-    //TODO: change this part to reflect your team**********
+    std::cout << "Straw Hat Pirates team members:" << std::endl;
     std::cout << "\t [1] Bradley Imalenowa (s4013693@student.rmit.edu.au)" << std::endl;
     std::cout << "\t [2] James Lowe (s4004797@student.rmit.edu.au)" << std::endl;
     std::cout << "\t [3] Alexander Peebles (s4008573@student.rmit.edu.au)" << std::endl;
-    //*************
 
     std::cout << std::endl;
 }
